@@ -8,7 +8,7 @@ export default {
   },
   // 路由设置
   router: {
-    isHash: false, //是否采用hash模式
+    isHash: true, //是否采用hash模式
     whiteList: [], // 路由白名单
     silentLogin: true, // 开发环境是否不登录就进入
   },

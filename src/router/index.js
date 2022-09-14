@@ -5,7 +5,7 @@ import { setupRouterGuard } from './guard'
 import routes from './auto-import'
 
 export const router = createRouter({
-  history: isHash ? createWebHashHistory('/') : createWebHistory('/'),
+  history: isHash ? createWebHashHistory() : createWebHistory(),
   routes,
   scrollBehavior: () => ({ left: 0, top: 0 }),
 })
