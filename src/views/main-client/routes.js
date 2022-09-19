@@ -1,10 +1,6 @@
 import Layout from '@/layout/index.vue'
 export default [
   {
-    path: '/',
-    redirect: '/platform-entry',
-  },
-  {
     path: '/platform-entry',
     name: 'platformEntry',
     component: Layout,

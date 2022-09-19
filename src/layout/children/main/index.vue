@@ -1,8 +1,8 @@
 <template>
-  <main class="w-full h-full relative z-10 pointer-events-none">
+  <main class="box layer">
     <router-view v-slot="{ Component, route }">
       <transition name="fade-slide" mode="out-in" appear>
-        <div :key="route.path" class="w-full h-full">
+        <div :key="route.path" class="box">
           <component :is="Component" />
         </div>
       </transition>

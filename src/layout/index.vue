@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full pt-66px relative box-border z-0 layout-container">
+  <div class="box layer">
     <AppMain />
   </div>
 </template>
@@ -11,8 +11,3 @@
 <script setup>
   import AppMain from './children/main/index.vue'
 </script>
-<style lang="scss" scoped>
-  .layout-container {
-    background: #eee;
-  }
-</style>

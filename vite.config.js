@@ -24,8 +24,7 @@ export default defineConfig(({ mode }) => {
       alias: {
         '@': resolve(__dirname, 'src'),
         views: resolve(__dirname, 'src/views'),
-        '~pics': resolve(__dirname, 'src/assets/images'),
-        bmPages: resolve(__dirname, 'src/views/bm-pages'),
+        '@pics': resolve(__dirname, 'src/assets/images'),
         '~store': resolve(__dirname, 'src/store'),
       },
     },
@@ -34,7 +33,14 @@ export default defineConfig(({ mode }) => {
       open: true,
       host: '0.0.0.0',
       https: false,
-      proxy: {},
+      proxy: {
+        '/supervise': {
+          target: 'http://supervise.bmsoft.com:9080/',
+          changeOrigin: true, //开启代理：在本地会创建一个虚拟服务端，然后发送请求的数据，并同时接收请求的数据，这样服务端和服务端进行数据的交互就不会有跨域问题
+          ws: true, // 是否启用websockets
+          logLevel: 'debug',
+        },
+      },
     },
     css: {
       postcss: {

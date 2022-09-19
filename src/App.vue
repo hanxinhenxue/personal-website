@@ -15,10 +15,7 @@
 </script>
 <style lang="scss">
   #app {
-    width: 1920px;
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
+    @apply w-full layer;
     .n-config-provider {
       height: inherit;
     }
