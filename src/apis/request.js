@@ -6,7 +6,7 @@ import Qs from 'qs'
 import { requestPoolStore } from '~store/system/request.js'
 
 // 环境的切换
-let baseURL = '/supervise/'
+let baseURL = ''
 const service = axios.create({
   baseURL,
   crossDomain: true,

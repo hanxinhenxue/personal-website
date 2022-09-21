@@ -2,11 +2,12 @@ import Layout from '@/layout/index.vue'
 export default [
   {
     path: '/',
-    name: 'platform-entrance',
-    component: () => import('views/basic-pages/platform-entrance/index.vue'),
-    meta: {
-      pageTitle: '首页',
-    },
+    redirect: '/request-pages/health-code',
+    // name: 'platform-entrance',
+    // component: () => import('views/basic-pages/platform-entrance/index.vue'),
+    // meta: {
+    //   pageTitle: '首页',
+    // },
   },
   {
     path: '/login',
