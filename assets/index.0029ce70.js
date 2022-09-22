@@ -1,0 +1,1 @@
+import{_ as e,o,c as n}from"./index.a40caebf.js";const t={name:"Login"},c={class:"login-container"};function s(a,r,_,i,p,d){return o(),n("div",c," \u767B\u5F55 ")}const l=e(t,[["render",s]]);export{l as default};

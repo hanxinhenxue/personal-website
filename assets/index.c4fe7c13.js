@@ -1,0 +1,1 @@
+import{_ as e,o as n,c as t}from"./index.a40caebf.js";const c={name:"PlatformEntrance"};function o(r,a,s,p,_,f){return n(),t("div",null," pc\u7AEF\u4E3B\u7AD9 ")}const d=e(c,[["render",o]]);export{d as default};
